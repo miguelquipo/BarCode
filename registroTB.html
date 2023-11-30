@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Styles/fontReg.css">
+
+    <title>Formulario de Registro</title>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+   <a href="index.html"> <button id="backButton" >
+        <i class="fa-sharp fa-light fa-arrow-left"></i>
+    </button></a>
+    <form action="./PHP/conexion.php" method="post">
+        <div class="container">
+            <label for="cedula"><b>Cédula</b></label>
+            <input type="text" placeholder="Ingresa tu cédula" name="cedula" required>
+
+            <label for="token"><b>Token de Identidad</b></label>
+            <input type="text" placeholder="Ingresa tu token de identidad" name="token" required>
+
+            <label for="nombre"><b>Nombre</b></label>
+            <input type="text" placeholder="Ingresa tu nombre" name="nombre" required>
+
+            <label for="apellido"><b>Apellido</b></label>
+            <input type="text" placeholder="Ingresa tu apellido" name="apellido" required>
+
+            <label for="trabajador"><b>Tipo de Trabajador</b></label>
+            <select name="trabajador">
+                <option value="1">Tipo 1</option>
+                <option value="2">Tipo 2</option>
+                <option value="3">Tipo 3</option>
+                <!-- Añade más opciones según sea necesario -->
+            </select>
+
+            <button type="submit">Registrar</button>
+        </div>
+    </form>
+</body>
+</html>
